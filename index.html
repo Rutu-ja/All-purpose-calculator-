@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="custom-navbar">
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Rutuja</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Certification</a>
+            </li>
+            <li>
+              <button type="button" class=" btn contact-us-btn btn-outline-secondary">Contact Us</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--main -->
+  <div class="calculator">
+    <div class="side1">
+      <h2>Calculate</h2>
+      <h4>Select your calculation</h4>
+      <button class="button button1"><i class="fa fa-calculator" aria-hidden="true"></i></button>
+      <button class="button button2"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <button class="button button3"><i class="fa fa-usd" aria-hidden="true"></i></button>
+      <button class="button button4"><i class="fa fa-home" aria-hidden="true"></i></button>
+      <button class="button button5"><i class="fa fa-thermometer-empty" aria-hidden="true"></i></button>
+      <button class="button button6"><i class="fa fa-heartbeat" aria-hidden="true"></i></button>
+      <button class="button button7"><i class="fa fa-clock-o" aria-hidden="true"></i></button>
+      <button class="button button8"><i class="fa fa-database" aria-hidden="true"></i></button>
+
+    </div>
+    <div class="side2">
+      <p style="color: white;"></p>
+      <table>
+        <tr id="row">
+          <td id="data" colspan="4"><button type="button" id="display" class="inpute display"></button></td>
+        </tr>
+        <tr id="row">
+          <td id="data" class="data_number"><button type="button" class="inpute">AC</button></td>
+          <td id="data"class="data_number"><button type="button" class="inpute">←</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">%</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">/</button></td>
+        </tr>
+
+        <tr id="row">
+          <td id="data" class="data_number"><button type="button" class="inpute">7</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">8</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">9</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute ">*</button></td>
+        </tr>
+
+        <tr id="row"> 
+          <td id="data" class="data_number"><button type="button" class="inpute">4</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">5</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">6</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute ">-</button></td>
+        </tr>
+
+        <tr id="row">
+          <td id="data" class="data_number"><button type="button" class="inpute">1</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">2</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">3</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">+</button></td>
+        </tr>
+
+        <tr id="row">
+          <td id="data" class="data_number"colspan="2"><button type="button" class="inpute inpute_0">0</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">.</button></td>
+          <td id="data" class="data_number"><button type="button" class="inpute">=</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- <div class="currency_exchange">
+      <div class="input-pannel">
+
+        <div class="country1">
+          <select name="Country" id="country-1"></select><br>
+          <input type="text" > 
+        </div>
+
+      </div>
+      <div class="output-pannel">
+
+        <div class="country1">
+          <select name="Country" id="country-2"></select><br>
+          <input type="text" > 
+        </div>
+
+      </div>
+    </div> -->
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
